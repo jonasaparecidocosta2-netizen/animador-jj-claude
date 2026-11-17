@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Política de Privacidade</title>
+<meta name="description" content="Política de Privacidade do aplicativo Animador JJ - Claude.">
+<style>
+:root{--bg:#ffffff;--fg:#1d1d1f;--muted:#5b5b66;--line:#e3e3e8;--accent:#c4302b;--card:#f6f6f8}
+@media (prefers-color-scheme:dark){:root{--bg:#141416;--fg:#ececf0;--muted:#a3a3ad;--line:#2c2c31;--accent:#ff6a63;--card:#1d1d21}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+main{max-width:760px;margin:0 auto;padding:40px 16px 64px}h1{font-size:1.8rem;line-height:1.2;margin:0 0 6px}
+h2{font-size:1.15rem;margin:32px 0 8px}.sub{color:var(--muted);margin:0 0 24px}
+table{width:100%;border-collapse:collapse;margin:12px 0;font-size:.95rem;display:block;overflow-x:auto}
+th,td{border:1px solid var(--line);padding:8px 10px;text-align:left;vertical-align:top}th{background:var(--card)}
+a{color:var(--accent)}code{font-size:.9em;word-break:break-all}footer{color:var(--muted);font-size:.9rem;margin-top:48px}
+nav{margin:0 0 24px}
+</style>
+</head>
+<body>
+<main>
+<nav><a href="index.html">← Animador JJ - Claude</a> · <a href="#en">English</a></nav>
+<h1>Política de Privacidade</h1>
+<p class="sub">Aplicativo “Animador JJ - Claude” · Última atualização: 17 de novembro de 2026</p>
+
+<h2>1. Quem somos e para quem é o aplicativo</h2>
+<p>“Animador JJ - Claude” é um programa de uso próprio, operado por Animador JJ, que roda no computador
+Windows do responsável. Ele é usado somente pelo dono dos canais, para os canais do YouTube que ele mesmo autoriza.
+Não há cadastro de usuários, site de serviço nem servidor próprio: tudo acontece no computador do responsável e nas
+APIs oficiais do Google.</p>
+
+<h2>2. Dados do Google que o aplicativo acessa</h2>
+<p>O acesso só acontece depois que o dono do canal entra na tela oficial do Google (accounts.google.com) e autoriza.
+Permissões (escopos) pedidas:</p>
+<table>
+<tr><th>Permissão</th><th>Para que é usada</th></tr>
+<tr><td><code>youtube.upload</code></td><td>Enviar ao canal os vídeos produzidos pelo dono, como <strong>privados</strong>, com título, descrição e miniatura.</td></tr>
+<tr><td><code>youtube.readonly</code></td><td>Ler o nome e o ID do canal (para confirmar que é o canal certo) e a lista de vídeos do canal: título, situação (público, privado, programado), data de envio, data programada e duração. Serve para escolher a próxima data livre e para não enviar o mesmo vídeo duas vezes.</td></tr>
+<tr><td><code>youtube</code></td><td>Somente para <strong>programar a data de publicação</strong> de vídeos privados do próprio canal que ainda não têm data. O aplicativo não usa essa permissão para apagar vídeos, comentar, alterar outros dados ou acessar outros canais.</td></tr>
+<tr><td><code>yt-analytics.readonly</code></td><td>Ler estatísticas do próprio canal (visualizações, tempo assistido, duração média, retenção, curtidas, comentários, compartilhamentos, inscritos ganhos) para o dono analisar o desempenho dos seus vídeos. Somente leitura.</td></tr>
+</table>
+<p>O aplicativo não pede nem acessa e-mail, contatos, Gmail, Drive ou qualquer outro dado da conta Google.</p>
+
+<h2>3. Onde os dados ficam guardados</h2>
+<table>
+<tr><th>O quê</th><th>Onde</th><th>Proteção</th></tr>
+<tr><td>Autorização de acesso de longa duração (refresh token) de cada canal e o identificador do cliente OAuth</td>
+    <td>Somente no computador do responsável, na pasta do usuário do Windows (<code>%LOCALAPPDATA%</code>)</td>
+    <td>Criptografados com a proteção de dados da conta do Windows (DPAPI); nunca exibidos nem gravados em arquivo comum</td></tr>
+<tr><td>Token de acesso de curta duração</td><td>Só na memória enquanto o programa roda</td><td>Descartado ao fechar</td></tr>
+<tr><td>Registro de envios e agendamentos: data, canal, plataforma, título, nome do arquivo, ID do vídeo, data e horário programados e situação</td>
+    <td>Arquivos de planilha (CSV) no computador do responsável</td><td>Não contêm tokens</td></tr>
+<tr><td>Registro de atividade do programa (títulos e IDs de vídeos, mensagens de erro)</td>
+    <td>Arquivo de texto no computador do responsável</td><td>Tokens são removidos automaticamente antes de gravar</td></tr>
+<tr><td>Estatísticas lidas do YouTube Analytics e lista de vídeos do canal</td>
+    <td>Arquivos JSON/Markdown no computador do responsável, para análise própria</td><td>Não contêm tokens</td></tr>
+</table>
+<p>Nenhum dado do Google é enviado para servidores do responsável ou de terceiros. As únicas conexões feitas com dados
+do Google são com as próprias APIs do Google (accounts.google.com, oauth2.googleapis.com, www.googleapis.com,
+youtubeanalytics.googleapis.com).</p>
+
+<h2>4. Compartilhamento</h2>
+<p>O aplicativo não vende, não aluga, não compartilha e não transfere dados de usuários do Google a ninguém. Os dados
+não são usados para publicidade, perfis de usuários ou treinamento de modelos de inteligência artificial.</p>
+
+<h2>5. Uso Limitado (Google API Services User Data Policy)</h2>
+<p>O uso e a transferência, para qualquer outro aplicativo, de informações recebidas das APIs do Google seguirão a
+<a href="https://developers.google.com/terms/api-services-user-data-policy">Política de Dados do Usuário dos Serviços
+de API do Google</a>, incluindo os requisitos de Uso Limitado.</p>
+
+<h2>6. Por quanto tempo e como apagar</h2>
+<ul>
+<li>A autorização fica guardada até o responsável desconectar o canal. O comando de desconexão do programa apaga do
+computador as autorizações guardadas.</li>
+<li>A qualquer momento o dono da conta pode revogar o acesso em
+<a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>. Depois disso o aplicativo
+não consegue mais acessar o canal.</li>
+<li>Os registros (CSV, texto, JSON) ficam no computador do responsável até ele apagá-los; basta excluir os arquivos.</li>
+<li>Os vídeos enviados ficam no próprio canal do YouTube e são gerenciados pelo dono no YouTube Studio.</li>
+</ul>
+
+<h2>7. Facebook (integração separada)</h2>
+<p>O mesmo programa pode, em separado, enviar vídeos às Páginas do Facebook do responsável pela API oficial da Meta.
+Nesse caso, guarda somente o ID e a chave do app da Meta e os tokens das Páginas autorizadas, criptografados da mesma
+forma (DPAPI) no computador do responsável. Nenhum dado do Google é enviado à Meta, e nenhum dado da Meta é enviado ao Google.</p>
+
+<h2>8. YouTube e Google</h2>
+<p>Este aplicativo usa os YouTube API Services. Consulte também a
+<a href="https://policies.google.com/privacy">Política de Privacidade do Google</a> e os
+<a href="https://www.youtube.com/t/terms">Termos de Serviço do YouTube</a>.</p>
+
+<h2>9. Mudanças e contato</h2>
+<p>Mudanças nesta política serão publicadas nesta página, com nova data. Dúvidas:
+<a href="mailto:jonasjj5070@gmail.com">jonasjj5070@gmail.com</a>.</p>
+
+<section id="en">
+<h2>English version</h2>
+<p><strong>Animador JJ - Claude</strong> is a personal tool operated by Animador JJ that runs on the
+operator's own Windows computer and is used only for the YouTube channels the operator authorizes through Google's
+official sign-in page. There is no public sign-up and no server of its own.</p>
+<p><strong>Google data accessed and why:</strong> <code>youtube.upload</code> — upload the operator's videos as private,
+with title, description and thumbnail; <code>youtube.readonly</code> — read the channel name/ID (to confirm the right
+channel) and the channel's video list (title, privacy status, upload date, scheduled date, duration) to choose free
+publishing dates and avoid duplicate uploads; <code>youtube</code> — only to set the scheduled publish date of the
+channel's own private videos that have no date yet (never used to delete videos, comment, or access other channels);
+<code>yt-analytics.readonly</code> — read the channel's own statistics so the operator can review performance. No email,
+contacts or other Google account data is requested.</p>
+<p><strong>Storage:</strong> refresh tokens and the OAuth client identifier are stored only on the operator's computer,
+encrypted with Windows Data Protection (DPAPI). Access tokens are kept in memory only. Local CSV/text/JSON records
+(dates, channel, title, file name, video ID, scheduled date/time, status, analytics figures) contain no tokens; tokens are
+stripped from logs. No Google user data is sent to any server other than Google's own APIs.</p>
+<p><strong>Sharing:</strong> Google user data is not sold, rented, shared or transferred, and is not used for advertising,
+profiling or AI model training. The app's use and transfer of information received from Google APIs will adhere to the
+<a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>,
+including the Limited Use requirements.</p>
+<p><strong>Retention and deletion:</strong> authorizations are kept until the operator disconnects the channel (the app's
+disconnect command deletes them) or revokes access at
+<a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>. Local records stay on the
+operator's computer until deleted. Uploaded videos remain in the operator's YouTube channel.</p>
+<p><strong>Facebook:</strong> a separate integration may upload videos to the operator's Facebook Pages through Meta's
+official API, storing only the Meta app ID/secret and Page tokens, DPAPI-encrypted, on the operator's computer. Google data
+is never sent to Meta.</p>
+<p>This app uses YouTube API Services; see the <a href="https://policies.google.com/privacy">Google Privacy Policy</a> and
+the <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a>. Contact: jonasjj5070@gmail.com.</p>
+</section>
+
+<footer>Animador JJ - Claude · <a href="termos.html">Termos de Serviço</a></footer>
+</main>
+</body>
+</html>
